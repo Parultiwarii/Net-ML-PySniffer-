@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/index.css">
+    <script src="/static/index.js"></script>
+    <title>Packet Sniffer</title>
+</head>
+<body>
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+          <a href="#home" class="active">Home</a>
+        </div>
+      
+        <!-- Left-aligned links (default) -->
+        <a href="#Team">Team</a>
+      
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+          
+          <a href="#footer">Links</a>
+        </div>
+      
+      </div>
+    <h1>Packet Sniffer</h1>
+    <form action="/sniff" method="POST">
+        <div id="main">
+        <button id = "button1" class = "buttons"type="submit" name="start">Start Sniffing</button>
+        <button id = "button2" class = "buttons" type="submit" name="stop">Stop Sniffing</button>
+        </div>
+    </form>
+    <hr>
+    <div class="about">
+      <div class = "heading-about">
+        <p><strong>Py<span>Sniffer</span></strong></p>
+      </div>
+      <div class="about-div-2">
+        <p class="about-paragraph">
+          A python based network sniffer with analysis capabilities with UI. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, facere.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row" id="Team">
+      <div class="column">
+        <div class="card">
+          <img src="/static/parul.jpeg" alt="Jane" style="width:100%" class="img">
+          <div class="container" class="img">
+            <h2>Parul Tiwari</h2>
+            <p class="title">ML &amp; Backend</p>
+            <p>Reg no: 21BCE5755</p>
+            <p>parul.tiwari2021@vitstudent.ac.in</p>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card" id="card2">
+          <img src="/static/harshith.jpg" alt="Mike" style="width:100%" class="img">
+          <div class="container">
+            <h2>Harshith Gurram</h2>
+            <p class="title">ML &amp; Backend</p>
+            <p>Reg no:21BCE5653</p>
+            <p id="harsh-p">gurramsri.harshithsimha2021@vitstudent.ac.in</p>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="/static/abhinavphoto.jpeg" alt="John" style="width:100%"class="img">
+          <div class="container">
+            <h2>Abhinav Tomar</h2>
+            <p class="title">Frontend</p>
+            <p>Reg no: 21BCE5678</p>
+            <p>abhinav.tomar2021a@vitstudent.ac.in</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <hr> -->
+    <div id="footer">
+      <h3>PySniffer</h3>
+      <ul class="socials">
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+</body>
+</html>
+

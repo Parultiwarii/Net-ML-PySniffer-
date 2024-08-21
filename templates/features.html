@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Packet Features</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="/templates/css/features.css">
+
+</head>
+<body>
+    <h1>Packet Features</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Source Port</th>
+                <th>Destination Port</th>
+                <th>Payloads</th>
+                <th>Protocol</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for packet in packets %}
+            <tr>
+                <td>{{ packet['src_ip'] }}</td>
+                <td>{{ packet['dst_ip'] }}</td>
+                <td>{{ packet['src_port'] }}</td>
+                <td>{{ packet['dst_port'] }}</td>
+                <td>{{ packet['payloads'] }}</td>
+                <td>{{ packet['protocol'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
